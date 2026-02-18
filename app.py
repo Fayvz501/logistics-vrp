@@ -187,8 +187,7 @@ if solution:
     
    # Центр карты (Москва) 
   m = folium.Map(location=[55.751244, 37.618423], zoom_start=10)
-m.get_root().html.add_child(folium.Element("<style>.leaflet-control-attribution { display: none !important; }</style>"))
-    
+      m.get_root().html.add_child(folium.Element("<style>.leaflet-control-attribution { display: none !important; }</style>"))  
    # Маркер склада 
    depot = locations[0] 
    folium.Marker( 
